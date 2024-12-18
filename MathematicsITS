@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS/"
+     xml:base="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MathematicsITS="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#attemptedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#attemptedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasAnsweredQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasAnsweredQuestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasDifficulty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasDifficulty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Difficultylevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasExplanation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasExplanation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasFeedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasHint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasHint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasPerformanceRecord -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasPerformanceRecord">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesExplanation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesExplanation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesFeedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesHint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#providesHint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasAttempts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasAttempts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasExplanationText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasExplanationText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasHintText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasHintText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasOperand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasOperand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasSolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasSolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasTimeTaken -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#hasTimeTaken">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AdvancedOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AdvancedOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#BasicOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#BasicOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Difficultylevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Difficultylevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Feedback"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#IntermediateOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#IntermediateOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#PerformanceRecord"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MathOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AddExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AddExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition"/>
+        <MathematicsITS:hasExplanation rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForAdd1"/>
+        <MathematicsITS:hasHint rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForAdd1"/>
+        <MathematicsITS:hasOperand>&quot;3 + 2&quot;</MathematicsITS:hasOperand>
+        <MathematicsITS:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</MathematicsITS:hasScore>
+        <MathematicsITS:hasSolution>5</MathematicsITS:hasSolution>
+        <MathematicsITS:hasTimeTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</MathematicsITS:hasTimeTaken>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition_Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition_Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#BasicOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Advanced_Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Advanced_Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AdvancedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#DivExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#DivExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division"/>
+        <MathematicsITS:hasExplanation rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForDiv1"/>
+        <MathematicsITS:hasHint rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForDiv1"/>
+        <MathematicsITS:hasOperand>&quot;20 / 4&quot;</MathematicsITS:hasOperand>
+        <MathematicsITS:hasSolution>5</MathematicsITS:hasSolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForAdd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForAdd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+        <MathematicsITS:hasExplanationText>Adding 3 + 2 results in 5 because you combine the two values.</MathematicsITS:hasExplanationText>
+        <rdfs:comment>Adding 3 + 5 results in 8 because you combine the two values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForDiv1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForDiv1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+        <MathematicsITS:hasExplanationText>Dividing 20 by 4 results in 5 because you split 20 into 4 equal parts.</MathematicsITS:hasExplanationText>
+        <rdfs:comment>Dividing 10 by 2 results in 5 because you split 10 into 2 equal parts.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForMul1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForMul1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+        <MathematicsITS:hasExplanationText>Multiplying 5 * 4 results in 20 as it means adding 5 four times.</MathematicsITS:hasExplanationText>
+        <rdfs:comment>Multiplying 4 * 3 results in 12 as it means adding 4 three times.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForSub1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForSub1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Explanation"/>
+        <MathematicsITS:hasExplanationText>Subtracting 7 - 3 results in 4 because you remove the second value from the first.</MathematicsITS:hasExplanationText>
+        <rdfs:comment>Subtracting 7 - 2 results in 5 because you remove the second value from the first.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForAdd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForAdd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+        <MathematicsITS:hasHint rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#AddExample1"/>
+        <MathematicsITS:hasHintText>Think of combining two groups. If you have 3 items and add 2 more, how many do you have in total?</MathematicsITS:hasHintText>
+        <rdfs:comment>To add, combine the two numbers</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForDiv1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForDiv1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+        <MathematicsITS:hasHintText>Division is about splitting into equal groups. If you divide 20 into 4 equal groups, how many are in each group?</MathematicsITS:hasHintText>
+        <rdfs:comment>Divide the numerator by the denominator.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForMul1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForMul1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+        <MathematicsITS:hasHintText>Multiplication is repeated addition. If you add 5 four times, what do you get?</MathematicsITS:hasHintText>
+        <rdfs:comment>Multiply the numbers directly.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForSub1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForSub1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Hint"/>
+        <MathematicsITS:hasHintText>Imagine starting with 7 and taking away 3. How many are left after subtracting?</MathematicsITS:hasHintText>
+        <rdfs:comment>Subtract the smaller number from the larger number.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Intermediate_Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Intermediate_Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#IntermediateOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MultExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#MultExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication"/>
+        <MathematicsITS:hasExplanation rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForMul1"/>
+        <MathematicsITS:hasHint rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForMul1"/>
+        <MathematicsITS:hasOperand>&quot;5 * 4&quot;</MathematicsITS:hasOperand>
+        <MathematicsITS:hasSolution>20</MathematicsITS:hasSolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#SubExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#SubExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction"/>
+        <MathematicsITS:hasExplanation rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#ExplanationForSub1"/>
+        <MathematicsITS:hasHint rdf:resource="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#HintForSub1"/>
+        <MathematicsITS:hasOperand>&quot;7 - 3&quot;</MathematicsITS:hasOperand>
+        <MathematicsITS:hasSolution>4</MathematicsITS:hasSolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Addition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Division"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Multiplication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oladipupooyebo_ysj/ontologies/2024/11/MathematicsITS#Subtraction"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
